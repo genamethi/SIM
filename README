@@ -1,0 +1,15 @@
+Interactive module for PtokaX's Lua interface via private message to a bots. Executes code immediately upon receiving it and echos it back. print has been implemented to mimic basic libs print.
+
+The example shows you the most basic way to get an interactive window going.
+
+buggyTo you probably want to use unless you're using CzDC, other clients have problems recieving PM's without a username.
+
+1) Place sim.lua in your Lua path, which is by default your Hub directory, hub directory\libs, or hub directory\scripts\libs.
+
+2) If you'd like to run the example put it in your scripts folder, change the string "Admin Name Here" to your nick and start the script, it will create a bot, PM imode to it for interactive mode. 
+
+3) If you'd like to drop it into a script, it is as simple as calling the hook commands on the appropriate event arrivals, setting up your bot configuration, and admin users. All something done in the example.
+
+There are a few functions in the module that are fun to play with. printfunc does just that, print replies back in PM, getlines is a tail like function, macro is an interesting higher-order function, but really just a toy. 
+
+I haven't extensively tested cmdmode in Windows, but it should function with some quirks. It works well in *nix based systems, still with some quirks (Eg, using sudo prompts for a password, there is no way to enter the password, pipes are one way)
